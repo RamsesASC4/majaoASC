@@ -17,7 +17,7 @@ function Pokemon(options){
 }
 
 Pokemon.prototype.TakeDamage = function(int){
-    var damage = Math.floor(int)
+    var damage = Math.floor(int) - this.defense;
     this.health = Math.ceil(this.health - damage);
     console.log(this.name + " now has " + this.health + " HP.");
 }
@@ -39,13 +39,15 @@ Pokemon.prototype.Battle = function(pokemon2){
                 var moveIndex = getRandomInt(-1,pokemon.moves.length-2);
                 var moveSelected = pokemon.moves[moveIndex];
                 var moveDamage = getRandomInt(moveSelected.damageMin, moveSelected.damageMax);
-                console.log(pokemon.name + " used " + moveSelected.name + " and dealt " + Math.floor((pokemon.attack*0.2 + pokemon.attack*critChance + moveDamage*0.3)) + " damage" + didCrit + "!");
+                var damage = Math.floor((pokemon.attack*0.2 + pokemon.attack*critChance + moveDamage*0.3) - pokemon2.defense)
+                if(damage < 0){damage = 0;}
+                console.log(pokemon.name + " used " + moveSelected.name + " and dealt " + moveDamage + " damage" + didCrit + "!");
                 pokemon2.TakeDamage(pokemon.attack*0.2 + pokemon.attack*critChance + moveDamage*0.3);
             } else {
                 var moveIndex = getRandomInt(-1, pokemon2.moves.length-2);
                 var moveSelected = pokemon2.moves[moveIndex];
                 var moveDamage = getRandomInt(moveSelected.damageMin, moveSelected.damageMax);
-                console.log(pokemon2.name + " used " + moveSelected.name + " and dealt " + Math.floor((pokemon2.attack*0.2 + pokemon2.attack*critChance + moveDamage*0.3)) + " damage" + didCrit + "!");
+                console.log(pokemon2.name + " used " + moveSelected.name + " and dealt " + moveDamage + " damage" + didCrit + "!");
                 pokemon.TakeDamage(pokemon2.attack*0.2 + pokemon2.attack*critChance + moveDamage*0.3);
             }
             turn = !turn;
@@ -72,7 +74,7 @@ var pikachu = new Pokemon({
        name: "Iron Whip",
        type: "Melee, Metal",
        damageMin: 10,
-       damageMax: 50,
+       damageMax: 20,
        effectiveRatio: 0.325,
        debuff: "None",
     },
