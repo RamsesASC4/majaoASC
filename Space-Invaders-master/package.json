@@ -1,0 +1,11 @@
+{
+  "name": "space-invaders",
+  "version": "1.0.0",
+  "description": "A javascript game to practice vanilla javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adrian Warholm",
+  "license": "ISC"
+}

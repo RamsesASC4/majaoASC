@@ -18,6 +18,7 @@ function Pokemon(options){
 
 Pokemon.prototype.TakeDamage = function(int){
     var damage = Math.floor(int) - this.defense;
+    if(damage < 0){ damage = 0;}
     this.health = Math.ceil(this.health - damage);
     console.log(this.name + " now has " + this.health + " HP.");
 }
