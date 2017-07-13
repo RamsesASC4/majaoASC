@@ -82,3 +82,5 @@ function randSent(){
 //console.log(randLetter());
 
 console.log(randSentenceSimple("this is dsasd asd da"));
+
+console.log(randSent());
