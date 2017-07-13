@@ -1,3 +1,5 @@
+var prompt = require('prompt-sync')();
+
 var charizard = ["Charizard", ["Type:", "Fire"], ["HP:", 200], ["ATK:", 120], ["DEF:", 150],["Legend:", false]];
 var pikachu = ["Pikachu", ["Type:", "Electric"], ["HP:",80], ["ATK:", 50], ["DEF:", 50],["Legend:", false]];
 var mew = ["Mew", ["Type:", "Psychic"], ["HP:", 100], ["ATK:", 120], ["DEF:", 150],["Legend:", true]];
@@ -21,4 +23,17 @@ for(var i=0;i<pokedex.length;i++){
       }
     }
     console.log(str)
+}
+
+var name = prompt("What pokemon would you like to see?");
+var bool = false;
+for(var i=0;i<pokedex.length;i++){
+    if(pokedex[i][0] == name){
+        console.log("It exists at index " + i + "!");
+        var bool = true;
+    }
+}
+
+if(!bool){
+    console.log("It doesnt eixst!")
 }
