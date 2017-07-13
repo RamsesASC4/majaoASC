@@ -21,5 +21,12 @@ function announce(){
     console.log("You fought "  + enemy + " in the " + mashArray[rand(mashArray.length)] + " and hit them " + attacks + " times. Too bad Mewtwo wins.");
 }
 
-questions();
-announce();
+
+while(true){
+    var ans = prompt("Would you like to fight?");
+    if(ans != "yes"){
+        break;
+    }
+    questions();
+    announce();
+}
