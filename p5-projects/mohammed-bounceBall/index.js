@@ -19,6 +19,8 @@ function draw(){
         vx = -1 * vx;
         vx *= random(1,distOffset)+minBoost;
         minBoost++;
+        if(x > 500){ x = 500}
+        if(y<0){y=0}
     } 
     if(y >= 500 || y <= 0){
         vy = vy/Math.abs(vy);
@@ -26,5 +28,7 @@ function draw(){
         vy *= random(1,distOffset)+minBoost;
         distOffset += 1;
         minBoost++;
+        if(y > 500){ y = 500}
+        if(y < 0){y=0}
     }
 }
