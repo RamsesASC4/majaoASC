@@ -1,0 +1,5 @@
+"Our string is here right now."
+"Here is another string to try"
+"Please don't jest about such things"
+"Unique New York and pork and more!"
+"Tiddly taddler tickled a dabber."
