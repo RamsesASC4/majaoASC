@@ -14,6 +14,9 @@ var aliens = [
     [[25,100],[],[],[],[]]
 ];
 
+var score = 0;
+var lives = 3;
+
 //Collision detection
 //a - object 1
 //b - object 2
@@ -21,7 +24,7 @@ var aliens = [
 //ay - object 1 y-position
 //aw - object 1 width
 //ah - object 2 height
-//bx, by, bw, and bh as such aswell
+//bx, by, bw, and bh as such as well
 function collisionDetection(ax,ay,aw,ah,bx,by,bw,bh){
     /*
     If a(object 1) and b(object 2) are within each other's boundaries,
@@ -59,6 +62,7 @@ function draw(){
         vx=1;//Go right now instead
         ay+=25; //Pull aliens down
     }
+    var chance = random(50);
     for(var i=0;i<aliens.length;i++){ //Goes through aliens for rows
         for(var j=0;j<aliens[i].length;j++){    //Goes through rows for individual aliens
            if(j==0){ //If it's the initial alien in that row
@@ -71,31 +75,60 @@ function draw(){
         }
     }
     fill('red')
+    if(chance > 48){
+      bullets.push([ax, ay+100, 1]);
+    }
     for (var i=0;i<bullets.length;i++){
+      fill("white");
+      if(bullets[i][2] == 0){
         bullets[i][1] -= 5; //Increases bullets y direction to fly up
+      } else {
+        fill("red");
+        bullets[i][1] += 5;
+      }
+      if(collisionDetection(x,y,20,40,bullets[i][0],bullets[i][1],10,10)){
+        if(lives > 0){
+          lives--;
+        } else {
+          noLoop();
+          fill("black");
+          textAlign(CENTER);
+          text("GAME OVER!",300,300);
+        }
+      }
         rect(bullets[i][0], bullets[i][1], 10, 10); //Creates bullets
         for(var k=0;k<aliens.length;k++){ //Go through the aliens array to find each row
             for(var j=0;j<aliens[k].length;j++){ //Go through each row to find each alien!
                 if(aliens[k] && aliens[k][j] && bullets[i] ){ //Makes sure they exist so it doesn't break the code!
-                    if(collisionDetection(bullets[i][0], bullets[i][1], 10, 10, aliens[k][j][0], aliens[k][j][1], 20, 20)){ //Checks if they collide
+                    if(collisionDetection(bullets[i][0], bullets[i][1], 10, 10, aliens[k][j][0], aliens[k][j][1], 20, 20) && bullets[i] && bullets[i][1] != 1){ //Checks if they collide
                         //Deletes from each array
                         bullets.splice(i,1);
                         aliens[k].splice(j,1);
+                        score+= 50;
                     }
                 }
             }
         }
         //Deletes bullet if it hits the top
-        if (bullets[i] && bullets[i][1] <=0){
+        if (bullets[i] && bullets[i][1] <=0 || bullets[i] && bullets[i][1] >= 600){
             bullets.splice(i,1);
         }
     }
+    if(aliens.length <= 0){
+      noLoop();
+      fill("black");
+      textAlign(CENTER);
+      text("You won!", 300, 300);
+    }
     ax+=5*vx; //Vx is the vector/direction. The number is the speed
+    document.getElementById("lives").innerHTML += "Score: " + score + " Lives: " + lives;
 }
 
 function keyPressed(){
-    if(keyCode ==UP_ARROW || keyCode == 32){
-        bullets.push([x, spawn]);
+    if(keyCode == UP_ARROW || keyCode == 32){
+        bullets.push([x, spawn, 0]);
         rect(x, spawn,10,10)
+    } else if(keyCode == 65){
+      location.reload();
     }
 }

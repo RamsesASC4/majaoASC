@@ -35,16 +35,28 @@
           text-align: center;
           line-height: 502px;
      }
+     .lives{
+       color: white;
+       position: 0,0;
+       font-family: sans-serif;
+     }
      </style>
 </head>
 <body>
 
+<div id="lives">
+  Lives: 3
+  Score: 0
+</div>
 <script src="js/index.js"></script>
 <script type="text/javascript">
 var screen, input, frames, spFrame, lvFrame;
 var alSprite, taSprite, ciSprite;
 var aliens, dir, tank, bullets, cities;
 var gameEnded = false;
+
+var lives = 3;
+var score = 0;
 
 window.addEventListener("keydown", function(e) {
     // space and arrow keys
@@ -185,8 +197,12 @@ function update(){
                bullets.splice(i,1);
                i--;
                len--;
-               delete tank.sprite;
-               gameEnded = true;
+               if(lives <= 0){
+                 delete tank.sprite;
+                 gameEnded = true;
+             } else {
+               lives--;
+             }
           }
           for (var j = 0, len2 = aliens.length; j < len2; j++){
                var a = aliens[j];
@@ -197,7 +213,7 @@ function update(){
                     bullets.splice(i,1);
                     i--;
                     len--;
-
+                    score+= 50;
                     switch(len2){
                          case 30:{
                               this.lvFrame = 40;
@@ -248,6 +264,7 @@ function update(){
                }
           }
      }
+     document.getElementById("lives").innerHTML = "Lives: " + lives + " Score: " + score;
 };
 function render(){
      screen.clear();
