@@ -13,6 +13,8 @@ var layout = [
   [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]]
 ];
 
+
+
 const StateEnum = {
   HID: 0,
   HIT: 1,
@@ -24,6 +26,7 @@ const ColorEnum = {
   HID: "#add8e6",
   DED: "#33"
 }
+
 var Grid;
 
 
@@ -43,6 +46,7 @@ function setup(){
 }
 
 function draw(){
+  background(100);
   Grid.setup();
 }
 
@@ -85,6 +89,8 @@ function grid(array,dim2){
 }
 
 
+
+/*
 function ship(px,py,sx,sy,color){
   this.x = px;
   this.y = py;
@@ -96,3 +102,5 @@ function ship(px,py,sx,sy,color){
     rect(this.x,this.y,this.sx,this.sy);
   }
 }
+
+*/
