@@ -1,0 +1,28 @@
+html,body {
+     height: 100%;
+     text-align: center;
+}
+
+body {
+     display: inline-block;
+     text-align: center;
+}
+
+img {
+     border-radius: 150px;
+}
+
+h1{
+     font-family: "Helvetica";
+}
+.container {
+     display: inline-block;
+}
+.box {
+     width: 50%;
+     -moz-box-shadow:    3px 3px 30px 5px #ccc;
+     -webkit-box-shadow: 3px 3px 30px 5px #ccc;
+     box-shadow:         3px 3px 30px 5px #ccc;
+     padding: 5px;
+     margin: 20px;
+}
