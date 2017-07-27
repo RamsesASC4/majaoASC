@@ -1,0 +1,88 @@
+html,body {
+     height: 100%;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+
+}
+
+.navbar {
+     background-color: transparent !important;
+     border: none;
+     margin: 0px;
+}
+
+#nav-list li a, #brand{
+     color: white;
+}
+
+.active a{
+     background-color: transparent !important;
+}
+
+header .jumbotron {
+     background: url("http://i.imgur.com/pqdICWJ.gif") no-repeat center center fixed;
+     background-size: cover;
+}
+
+header {
+     height: 60%;
+}
+
+.jumbotron {
+     height: 100%;
+     text-align: center;
+}
+
+.logo {
+     text-align: center;
+     color: white;
+     text-shadow: 5px 5px 5px #000;
+}
+
+.logo h1 {
+     padding: 10px;
+     width: auto;
+     display: inline-block;
+     white-space: nowrap;
+     text-transform: uppercase;
+     font-family: 'Raleway';
+     font-size: 84px;
+}
+.logo img {
+     max-width: 200px;
+     max-height: 200px;
+     clear: both;
+}
+.awards {
+     text-align: center;
+     background-color: #e5eaee;
+}
+
+.row {
+     margin-bottom: 10px;
+}
+
+.awards li {
+     max-height: 150px;
+     width: 100%;
+     background-image: url("../../assets/images/laurel_left.png"), url("../../assets/images/laurel_right.png");
+     background-position-x: left,right;
+     background-position-y: center, center;
+     background-size: contain;
+     background-repeat: no-repeat;
+     display: inline-block;
+     vertical-align: middle;
+
+}

@@ -33,10 +33,28 @@ html,body{
      color: white;
      width: 50%;
      position: relative;
+     top: 10%;
+
 }
 
 .title-text h1 {
      top: 50%;
      position: absolute;
      transform: translateY(100%);
+     font-weight: 100;
+     font-family: sans-serif;
+}
+
+#start-now {
+     max-width: 581;
+     max-height: 317;
+     width: 50%;
+     height: 25%;
+     margin-top: -10%;
+     background-color: #efffff;
+     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+     color: black;
+     font-family: sans-serif;
+     font-weight: 200;
+     text-align: center;
 }
