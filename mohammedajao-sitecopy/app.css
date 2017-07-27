@@ -1,0 +1,42 @@
+html,body{
+     height: 100%;
+}
+
+.jumbotron {
+     height: 100%;
+     text-align: center;
+}
+
+.navbar-brand, .navbar-nav li a{
+     color: white;
+}
+
+.main-thumbnail {
+     background-image: url("assets/bg.jpg");
+     background-size: cover;
+     background-position: center center;
+}
+
+.jumbotron img {
+     margin-top: -45px;
+}
+
+.round {
+     border-radius: 50px;
+}
+.navbar-nav li a {
+     font-weight: lighter;
+     font-size: 18px;
+}
+
+.title-text {
+     color: white;
+     width: 50%;
+     position: relative;
+}
+
+.title-text h1 {
+     top: 50%;
+     position: absolute;
+     transform: translateY(100%);
+}

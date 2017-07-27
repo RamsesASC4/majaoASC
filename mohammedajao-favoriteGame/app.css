@@ -1,0 +1,47 @@
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body, html {
+     height: 100%;
+}
+
+.inner-shadow {
+     box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.navbar {
+     margin: 0px;
+}
+
+.main-thumbnail {
+     background: url("https://static2.lolwallpapers.net/2017/07/595883e10149b-1024x576.png");
+     background-size: cover;
+     background-position: center center;
+     color: white;
+     height: 100%;
+     width: 100%;
+     background-attachment: fixed;
+     /*text-align: center;*/
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     z-index: -2;
+     box-shadow: inset 0px 0px 100px 100px rgba(0,0,0,0.5);
+}
+
+#play-now {
+     text-transform: uppercase;
+     max-width: 128px;
+     background-image: url("assets/header_play.jpg");
+     padding: 20px 50px 20px 50px;
+}
+
+.perks {
+     margin-top: -3%;
+     background-color: white;
+}
