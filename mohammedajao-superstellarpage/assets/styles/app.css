@@ -13,10 +13,6 @@ html {
   box-sizing: inherit;
 }
 
-body {
-
-}
-
 .navbar {
      background-color: transparent !important;
      border: none;
@@ -31,9 +27,16 @@ body {
      background-color: transparent !important;
 }
 
+
 header .jumbotron {
      background: url("http://i.imgur.com/pqdICWJ.gif") no-repeat center center fixed;
      background-size: cover;
+     animation: moveIt 10s linear infinite;
+}
+
+@keyframes moveIt {
+  from {background-position: center;}
+  to {background-position: -1000px;}
 }
 
 header {

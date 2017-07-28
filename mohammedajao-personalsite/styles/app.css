@@ -1,0 +1,117 @@
+html,body {
+     height: 100%;
+}
+
+.cherry-red {
+     color: #C44D4D;
+}
+header {
+     background-color: white;
+     overflow: hidden;
+}
+
+i {
+     color: white;
+}
+.navbar-default {
+     border-style: none;
+     padding-top: 50px;
+     padding-bottom: 10px;
+}
+
+.navbar {
+     margin-bottom: 0px;
+     padding-bottom: 0px;
+}
+.navbar .container-fluid{
+     background-color: #fff;
+     border-style: none;
+     margin-bottom: 0px;
+}
+
+.navbar .navbar-collapse {
+     background-color: #fff;
+     border-style: none;
+}
+.navbar .navbar-nav {
+     display: inline-block;
+     float: none;
+     margin: 0;
+}
+
+.navbar .navbar-collapse {
+     text-align: center;
+     color: black;
+     font-family: Raleway;
+     text-transform: uppercase;
+}
+
+.main {
+     border: 2px ridge black;
+}
+
+header {
+     height: 100%;
+}
+
+header .jumbotron {
+     margin-top: 0px;
+     height: 120%;
+     background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("assets/wt1.jpg");
+     background-position: center center;
+     background-size: cover;
+     background-attachment: fixed;
+}
+
+.main-thumbnail {
+     font-family: "Brush Script Mt";
+     color: white;
+     text-align: center;
+     vertical-align: middle;
+     margin-top: 45%;
+     padding-top: 15%;
+}
+
+.main-thumbnail h1 {
+     font-size: 6em;
+}
+
+.main-thumbnail p {
+     font-size: 2em;
+     margin-top: -20px;
+}
+
+
+.main-thumbnail i {
+     padding-left: 10px;
+     padding-right: 10px;
+}
+
+.section {
+     margin-top: 100px;
+     height: 10%;
+}
+
+.about-me {
+     text-align: center;
+     font-family: "Lato";
+}
+.about-me img{
+     height: : 100%;
+}
+
+.about-me h2 {
+     text-align: left;
+     font-weight: bold;
+     font-size: 4vw;
+}
+
+.about-me p {
+     text-align: left;
+     padding-left: 1%;
+     font-size: 1vw;
+}
+
+.row {
+     padding-left: 10%;
+}
