@@ -37,12 +37,23 @@ header .jumbotron {
 }
 
 header {
-     height: 60%;
+     height:80%;
+
 }
 
 .jumbotron {
      height: 100%;
      text-align: center;
+     /*box-shadow: inset 0px -50px 10px -10px rgba(255,255,255,1);*/
+}
+
+.jumbotron .container {
+     height: 100%;
+}
+
+.section {
+     margin-top: 25px;
+     margin-bottom: 25px;
 }
 
 .logo {
@@ -53,36 +64,109 @@ header {
 
 .logo h1 {
      padding: 10px;
-     width: auto;
+     width:100%;
      display: inline-block;
-     white-space: nowrap;
      text-transform: uppercase;
      font-family: 'Raleway';
-     font-size: 84px;
+     font-size: 8vw;
 }
 .logo img {
      max-width: 200px;
      max-height: 200px;
      clear: both;
 }
-.awards {
+
+.awards-section {
      text-align: center;
-     background-color: #e5eaee;
+     background-color: #fff; /*#e5eaee;*/
+}
+
+.awards-section .section {
+     transform: translateX(-1.5%);
 }
 
 .row {
      margin-bottom: 10px;
 }
 
-.awards li {
+.awards-section {
+     font-weight: bolder;
+     font-family: "Montserrat";
+}
+
+li.award {
      max-height: 150px;
      width: 100%;
      background-image: url("../../assets/images/laurel_left.png"), url("../../assets/images/laurel_right.png");
      background-position-x: left,right;
      background-position-y: center, center;
+     width: auto;
      background-size: contain;
      background-repeat: no-repeat;
      display: inline-block;
-     vertical-align: middle;
+     padding: 10px 40px;
+     margin-bottom: 20px;
+     text-transform: uppercase;
+}
 
+.org {
+     font-weight: lighter;
+}
+
+.details {
+     font-weight: bold;
+}
+
+.org::after {
+     content: "";
+     display: table;
+     clear: both;
+}
+
+.vid {
+     background-color: #e5eaee;
+}
+
+.trailer {
+     position: relative;
+     padding-bottom: 56.25%;
+     padding-top: 25px;
+     height: 0;
+}
+
+.trailer iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+}
+
+.nav img {
+     border-radius: 100px;
+}
+
+.about {
+     margin-top: 200px;
+     font-size: 2vw;
+     font-family: "Montserrat";
+}
+
+.about h2 {
+     font-weight: bold;
+}
+
+.team {
+     padding-top: 50px;
+     background-color: #e5eaee;
+}
+
+.md-only{
+     display: none;
+}
+
+@media(max-width: 480px){
+     .md-only{
+          display: block;
+     }
 }
