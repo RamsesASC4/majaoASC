@@ -35,8 +35,8 @@ header .jumbotron {
 }
 
 @keyframes moveIt {
-  from {background-position: center;}
-  to {background-position: -1000px;}
+  from {background-position: right;}
+  to {background-position: left;}
 }
 
 header {
