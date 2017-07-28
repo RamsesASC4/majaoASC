@@ -31,13 +31,6 @@ html {
 header .jumbotron {
      background: url("http://i.imgur.com/pqdICWJ.gif") no-repeat center center fixed;
      background-size: cover;
-     background-repeat: repeat-x;
-     animation: moveIt 10s linear infinite;
-}
-
-@keyframes moveIt {
-  from {background-position: right;}
-  to {background-position: left;}
 }
 
 header {
