@@ -1,0 +1,517 @@
+/* Fonts */
+
+@font-face {
+     font-family: "Trade Gothic";
+     src: url("fonts/TradeGothic/Trade Gothic LT.ttf");
+}
+
+@font-face {
+     font-family: "Trade Gothic";
+     src: url("fonts/TradeGothic/Trade Gothic LT Bold.ttf");
+     font-weight: bold;
+}
+
+@font-face {
+     font-family: "Trade Gothic";
+     src: url("fonts/TradeGothic/Trade Gothic LT Light.ttf");
+     font-weight: lighter;
+}
+
+@font-face {
+     font-family: "LFT Etica";
+     src: url("fonts/LFT Etica/LFT_Etica_Reg.otf");
+}
+
+@font-face {
+     font-family: "LFT Etica";
+     src: url("fonts/LFT Etica/LFT_Etica_Semibold.otf");
+     font-weight: 500;
+}
+
+@font-face {
+     font-family: "LFT Etica";
+     src: url("fonts/LFT Etica/LFT_Etica.Bold.otf");
+     font-weight: bold;
+}
+
+@font-face {
+     font-family: "LFT Etica";
+     src: url("fonts/LFT Etica/LFT_Etica_Light.otf");
+     font-weight: lighter;
+}
+
+@font-face {
+     font-family: "Bebas Neue";
+     src: url("fonts/Bebas Neue/BebasNeue Regular.otf");
+}
+
+@font-face {
+     font-family: "Bebas Neue";
+     src: url("fonts/Bebas Neue/BebasNeue Bold.otf");
+     font-weight: bold;
+}
+
+@font-face {
+     font-family: "Bebas Neue";
+     src: url("fonts/Bebas Neue/BebasNeue Light.otf");
+     font-weight: lighter;
+}
+
+@font-face {
+     font-family: "Bebas Neue";
+     src: url("fonts/Bebas Neue/BebasNeue Thin.otf");
+     font-weight: 100;
+}
+
+@font-face {
+     font-family: "Gorgeous";
+     src: url("fonts/Gorgeous/Gorgeous-Regular.ttf");
+}
+
+@font-face {
+     font-family: "Gorgeous";
+     src: url("fonts/Gorgeous/Gorgeous-Regular.ttf");
+}
+
+@font-face {
+     font-family: "Gorgeous";
+     src: url("fonts/Gorgeous/Gorgeous-SemiBold.ttf");
+     font-weight: bold;
+}
+
+@font-face {
+     font-family: "Gorgeous";
+     src: url("fonts/Gorgeous/Gorgeous-Bold.ttf");
+     font-weight: bolder;
+}
+
+@font-face {
+     font-family: "Gorgeous";
+     src: url("fonts/Gorgeous/Gorgeous-Light.ttf");
+     font-weight: light;
+}
+
+@font-face {
+     font-family: "Gorgeous";
+     src: url("fonts/Gorgeous/Gorgeous-Thin.ttf");
+     font-weight: 200;
+}
+
+@font-face {
+     font-family: "Open Sans";
+     src: url("fonts/Open Sans/OpenSans-Regular.ttf");
+}
+
+@font-face {
+     font-family: "Open Sans";
+     src: url("fonts/Open Sans/OpenSans-Semibold.ttf");
+     font-weight: bold;
+}
+
+@font-face {
+     font-family: "Open Sans";
+     src: url("fonts/Open Sans/OpenSans-Bold.ttf");
+     font-weight: bolder;
+}
+
+@font-face {
+     font-family: "Open Sans";
+     src: url("fonts/Open Sans/OpenSans-Light.ttf");
+     font-weight: lighter;
+}
+
+
+
+
+/* Defaults */
+* {
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+html,body {
+     height: 100%;
+     margin: 0;
+     overflow-x: hidden;
+}
+
+
+body {
+     display: table;
+     width: 100%;
+}
+
+
+div+div {
+     height: 100vh;
+}
+
+header {
+     height: 80%;
+}
+
+.container {
+     width: 100%;
+     height: 100vh;
+}
+/*.container {
+     width: 100vw;
+     height: 100vh;
+}*/
+
+/* Custom */
+
+h2 {
+     font-family: "LFT Etica";
+}
+
+.jumbotron {
+     overflow: hidden;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+#main-thumbnail {
+     background-image: url("images/icon.png");
+     background-position: center center;
+     background-size: contain;
+     background-repeat: no-repeat;
+     width: 100%;
+     animation: float 6s ease-in-out infinite;
+     z-index: 0;
+     clear: both;
+     display: block;
+     height: 100vh;
+}
+
+#main-thumbnail .back {
+     position: relative;
+     z-index: 1;
+}
+
+.jumbotron h1 {
+     font-family: "Trade Gothic";
+     text-transform: uppercase;
+     font-weight: bold;
+     position: absolute;
+     /*top: 20%;*/
+     left: 0;
+     top: 0;
+     width: 100%;
+     font-size: 10vw;
+     color: pink;
+
+     background: -webkit-linear-gradient(left, #D8BFD8 ,pink);
+   background: -o-linear-gradient(right, #D8BFD8,pink);
+   background: -moz-linear-gradient(right, #D8BFD8,pink);
+   background: linear-gradient(to right, #D8BFD8 ,pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.jumbotron .row{
+     height: auto;
+}
+
+@media(max-width: 780px){
+     .jumbotron h1 {
+          font-size: 10vh;
+     }
+     .jumbotron p {
+          font-size: 5vh;
+     }
+}
+
+  .jumbotron p {
+     position: absolute;
+     text-transform: uppercase;
+     top: 80px;
+     width: 45%;
+     left: 0;
+     font-size:2vw;
+     font-family: "Trade Gothic";
+     font-weight: bold;
+}
+
+  .jumbotron h1, .jumbotron p {
+     animation: float 8s ease-in-out infinite;
+}
+
+.icon-rows {
+     width: 100%;
+     position: relative;
+     height: 50px;
+     display: inline-block;
+     overflow: auto;
+}
+
+.jumbotron .icon-rows a {
+     padding: 5px;
+     border: 2px solid silver;
+     -moz-border-radius: 50px/50px;
+  -webkit-border-radius: 50px 50px;
+  border-radius: 50px/50px;
+  display: inline-block;
+     color: silver;
+     transition: .5s;
+     width: 50px;
+     height: 50px;
+     box-sizing: content-box;
+}
+
+.jumbotron .icon-rows i {
+     font-size: 32px;
+     vertical-align: middle;
+}
+
+.jumbotron .icon-rows a:hover {
+     color: #c99065;
+     border-color: #c99065;
+}
+
+.jumbotron .navbar  {
+     right: 0;
+     margin-right: 10px;
+     margin-top: 10px;
+     position: absolute;
+     top: 0;
+     display: inline-block;
+     font-size: 2vw;
+     font-family: "Trade Gothic";
+     font-weight: bold;
+     text-transform: uppercase;
+}
+
+.navbar {
+     display: inline-block;
+}
+.nav-link {
+     color: black;
+     margin-right: 50px;
+     vertical-align: middle;
+}
+
+#nav-box {
+     padding-left: 30px;
+     padding-right: 30px;
+     color: #fe3d5d;
+     border: 2px solid #fe3d5d;
+     transition: .5s;
+     margin-right: 0;
+}
+
+#nav-box:hover {
+     background-color: #fe3d5d;
+     color: white;
+}
+
+@media screen and (max-width: 500px){
+     .navbar {
+          display: none !important;
+     }
+}
+/*About-Me Section*/
+
+.about {
+     text-align: center;
+     height: auto;
+     width: 100%;
+     overflow:hidden;
+}
+
+.about h2 {
+     margin-top: 5vh;
+     text-transform: uppercase;
+     font-size: 64px;
+     font-size: 6vh;
+     background-color: rgba(255,255,255,1);
+     width: auto;
+     display: inline-block;
+     white-space: nowrap;
+     overflow: hidden;
+     color: #c99065;
+     padding: 20px;
+     padding-bottom: 0;
+     z-index: 2;
+}
+
+.about .container-fluid {
+     z-index: -1;
+     display: inline-block;
+     position: relative;
+     margin-bottom: 30px;
+}
+
+.about-box {
+     height: auto;
+     margin: 5px;
+     margin-top: -6.5vh;
+     border: 10px solid #c99065;
+     width: 100%;
+     display: inline-block;
+     padding: 20px;
+     padding-top: 50px;
+     font-size: 24px;
+     font-size: 3vh;
+     font-family: "Trade Gothic";
+     margin-bottom: 100px;
+}
+
+/* Work */
+
+.work {
+     background-color: #e5eaee;
+     width: 100%;
+     width: 100vw;
+     overflow: hidden;
+     padding: 50px 0px 100px 0px;
+     height: auto;
+}
+
+h2 {
+     font-size: 64px;
+     font-size: 6vh;
+     color: #c99065;
+     overflow: hidden;
+     text-transform: uppercase;
+}
+
+.work .column {
+     height: auto;
+     padding: 0;
+}
+
+.work img {
+     width: 100%;
+}
+.work .row {
+     text-align: center;
+     height: auto;
+     max-width: 960px;
+     margin: 0px auto;
+}
+
+.work .overlay {
+     height: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     position: absolute;
+     background-color: rgba(201, 144, 101, 0.9);
+     transition: .5s ease;
+     z-index: 10;
+     font-family: "BebasNeue";
+     overflow: hidden;
+     text-align: center;
+     display: inline-flex;
+     vertical-align: middle;
+}
+
+.work .overlay p {
+     font-size: 24px;
+     font-size: 2.5vh;
+     color: white;
+     padding: 0;
+     margin: 0;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 100%;
+     font-weight: lighter;
+     font-family: "Open Sans", arial, sans-serif;
+     text-transform: uppercase;
+     padding: 5px;
+}
+
+.work .thumb-prev:hover .overlay {
+     height: 100%;
+}
+
+/* Testimonials */
+
+.testimonials {
+     overflow: hidden;
+     height: auto;
+     font-family: "Trade Gothic";
+}
+.testimonials h2 {
+     padding-top: 50px;
+
+}
+
+.testimonials .active-cli {
+     margin: 50px auto;
+     display: flex;
+     max-width: 750px;
+}
+
+
+.client-face img {
+     max-width: 180px;
+     border-radius: 100px;
+}
+
+.testimonials figure {
+     margin: 1em 40px;
+     width: auto;
+}
+
+.client-cont {
+     line-height: 36px;
+     margin-top: 5px;
+     position: relative;
+     text-align: left;
+     font-family: "Open Sans";
+     font-size: 18px;
+}
+
+.client-quote-mark {
+     width: 60px;
+     height: 60px;
+     position: absolute;
+     z-index: 0;
+     opacity: 0.2;
+}
+
+
+.client-cont p {
+     margin: 0 0 20px 0;
+     padding-left: 15px;
+     padding-top: 15px;
+     z-index: 2;
+}
+
+.testimonials .client-name {
+     font-size: 14px;
+     text-transform: uppercase;
+     color: #666;
+}
+
+.testimonials .client-title {
+     font-size: 12px;
+     color: #999;
+     font-style: normal;
+}
+
+@media(max-width: 480px){
+     .testimonials .active-cli {
+          display: block;
+     }
+     .testimonials .client-cont {
+          display: block;
+     }
+}

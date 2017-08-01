@@ -6,6 +6,7 @@
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <title>Document</title>
 
+     <link rel="stylesheet" href="assets/libs/normalize.css">
      <!-- Font Awesawwwmee -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <!-- Glyphicons -->
@@ -15,119 +16,167 @@
 
      <!-- Optional theme -->
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
      <!-- Fonts -->
-     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway|Brush+Script+Mt|Lato|Open+Sans" />
+     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway|Brush+Script+Mt|Lato|Open+Sans|Bebas+Neue" />
+
+     <!-- Animate CSS -->
+     <link rel="stylesheet" href="assets/libs/animate.css">
+
      <!-- Custom Theme -->
-     <link rel="stylesheet" href="styles/app.css">
+     <link rel="stylesheet" href="assets/app.css">
 </head>
-<body>
-     <header>
-          <nav class="navbar navbar-default">
+<body class="animated fadeIn">
+     <div class="jumbotron">
+          <div class="row container text-center clearfix" id="main-thumbnail"></div>
+          <div class="row">
+               <h1 class='col-xs-12 back'>Portfolio</h1>
+               <p class="col-xs-12">The teenage limit breaker's</p>
+          </div>
+          <nav class="row navbar-toggleable-md navbar navbar-light bg-faded navbar-right">
                <div class="container-fluid">
-                    <div class="container-fluid">
-                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                              <span class="sr-only">Toggle navigation</span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                         </button>
-                    </div>
-                    <div class="collapse navbar-collapse">
-                         <ul class="nav navbar-nav">
-                              <li class=""><a href="#" class="">Section 1</a></li>
-                              <li class=""><a href="#" class="">Section 2</a></li>
-                              <li class="main"><a href="#" class="">Section 3</a></li>
-                              <li class=""><a href="#" class="">Section 4</a></li>
-                              <li class=""><a href="#" class="">Section 5</a></li>
-                         </ul>
-                    </div>
+                    <ul class="nav navbar-nav mr-auto">
+                         <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                         <li class="nav-item"><a id="nav-box" href="#work" class="nav-link">+&nbsp;&nbsp;Gallery</a></li>
+                    </ul>
                </div>
           </nav>
-          <div class="main-thumbnail jumbotron">
-               <h1>Mohammed<span class="cherry-red">Ajao</span></h1>
-               <p>Your city-wide teen programmer.</p>
-               <span>
-                    <a href="https://github.com/majaoASC4"><i class="fa fa-github"></i></a>
-                    <a href="mailto:ajaomohammed@gmail.com"><i class="fa fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/mohammed-a-6663a813b/"><i class="fa fa-linkedin-square"></i></a>
-               </span>
+          <span class="row icon-rows text-center">
+               <a href="https://github.com/majaoASC4"><i class="fa fa-github"></i></a>
+               <a href="https://www.linkedin.com/in/mohammed-a-6663a813b/"><i class="fa fa-linkedin"></i></a>
+               <a href="#"><i class="fa fa-facebook"></i></a>
+               <a href="mailto:ajaomohammed@gmail.com"><i class="fa fa-envelope-o"></i></a>
+               <a href="#"><i class="fa fa-youtube-play"></i></a>
+          </span>
+     </div>
+     <div class="about container">
+          <h2 class="">About</h2>
+          <div class="container-fluid">
+               <p class="about-box"><strong>Mohammed Ajao isn't your typical teenager.</strong>
+                    He's a multi-talented, award-winning teenager exquisitely proficient in
+                    programming, UI/UX Design, drawing, and writing. It was
+                    only in 2017 when he became a world-wide champion for annual
+                    Global Contest For Awesome People that he began to blossom.
+                    Now he owns a series of Youtube video and tutorials detailing
+                    his journeys step-by-step, bringing him to the point where you realize this
+                    is just all filler content.
+               </p>
           </div>
-     </header>
-     <article class="container-fluid">
-          <div class="section about-me">
-               <div class="text-center circle">
-
-               </div>
-               <div class="row">
-                    <div class="col-md-6">
-                         <h2>City-Wide Champion</h2>
-                         <p>I'm a city-wide renown programmer, winning the 2017 <strong>CSNYC Student Showcase</strong> in 2017.
-                         I have developed algorithms for my Robotics team, created a successful game, and am proficient in over
-                         five programming languages. You can check the amount in my work section. <br><br>
-
-                         Currently, I am focusing on web development and freelancing. I aim to participate in
-                         more hackathons in the near future and help other coding organizations such as
-                         <strong>Girl's Who Code</strong> and <strong>All Star Code</strong>.
-                         </p>
-                    </div>
-                    <div class="col-md-6 container-fluid">
-                         <img src="http://icon-icons.com/icons2/847/PNG/512/trophy_icon-icons.com_67206.png" alt="Trophy">
-                    </div>
-               </div>
-               <div class="row">
-                    <div class="col-md-6"></div>
-                    <div class="col-md-6"></div>
-               </div>
-          </div>
-          <hr>
-          <br>
-          <div class="section container-fluid work">
-               <div class="row row-1">
-                    <div id="thumb1" class="col-md-4 container thumb-prev" style="background-image: url('https://github.com/DevTips/Artists-Theme/blob/gh-pages/assets/img/work/proj-1/thumb.jpg?raw=true');">
+     </div>
+     <div class="work">
+          <h2 class="text-center">Work</h2>
+          <div id="work" class="row">
+               <div class="col-md-3 column col-xs-6">
+                    <div class="thumb-prev">
+                         <img src="assets/images/Bloxxers.png" alt="">
                          <div class="overlay">
-                              <div class="text">Mobile Design Concept</div>
-                         </div>
-                    </div>
-                    <div id="thumbnail-2" class="col-md-4 container thumb-prev" style="background-image: url('styles/assets/thumb3.jpg');">
-                         <div class="overlay">
-                              <div class="text">CSS Frameworks</div>
-                         </div>
-                    </div>
-                    <div class="col-md-4 container thumb-prev" style="background-image: url('https://github.com/DevTips/Artists-Theme/blob/gh-pages/assets/img/work/proj-2/thumb.jpg?raw=true');">
-                         <div class="overlay">
-                              <div class="text">UI/UX Design & Patterns</div>
-                         </div>
-                    </div>
-                    <div class="col-md-4 container thumb-prev" style="background-image: url('https://github.com/DevTips/Artists-Theme/blob/gh-pages/assets/img/work/proj-4/thumb.jpg?raw=true');">
-                         <div class="overlay">
-                              <div class="text">Game Creations</div>
-                         </div>
-                    </div>
-                    <div class="col-md-4 container thumb-prev" style="background-image: url('https://github.com/DevTips/Artists-Theme/blob/gh-pages/assets/img/work/proj-6/thumb.jpg?raw=true');">
-                         <div class="overlay">
-                              <div class="text">Work-related Activities</div>
-                         </div>
-                    </div>
-                    <div class="col-md-4 container thumb-prev" style="background-image: url('https://github.com/DevTips/Artists-Theme/blob/gh-pages/assets/img/work/proj-7/thumb.jpg?raw=true');">
-                         <div class="overlay">
-                              <div class="text">Skills && Statistics</div>
+                              <p class="text-center">Bloxxers Alpha</p>
                          </div>
                     </div>
                </div>
+               <div class="col-md-3 column col-xs-6">
+                    <div class="thumb-prev">
+                         <img src="assets/images/ssg.png" alt="">
+                         <div class="overlay">
+                              <p class="text-center">Super Stellar Games Landing Page</p>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-md-3 column col-xs-6">
+                    <div class="thumb-prev">
+                         <img src="assets/images/mobile.jpg" alt="">
+                         <div class="overlay">
+                              <p class="text-center">Mobile UI/UX Designs</p>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-md-3 column col-xs-6">
+                    <div class="thumb-prev">
+                         <img src="assets/images/tradart.jpg" alt="">
+                         <div class="overlay">
+                              <p class="text-center">Traditional Artwork</p>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-md-3 column col-xs-6">
+                    <div class="thumb-prev">
+                         <img src="assets/images/webdesign.png" alt="">
+                         <div class="overlay">
+                              <p class="text-center">Web Development & Designs</p>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-md-3 column col-xs-6">
+                    <div class="thumb-prev">
+                         <img src="assets/images/csfair.png" alt="">
+                         <div class="overlay">
+                              <p class="text-center">NYC CS Fair Winner</p>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-md-3 column col-xs-6">
+                    <div class="thumb-prev">
+                         <img src="https://github.com/DevTips/Artists-Theme/blob/gh-pages/assets/img/work/proj-2/thumb.jpg?raw=true" alt="">
+                         <div class="overlay">
+                              <p class="text-center">Minimalistic Icons</p>
+                         </div>
+                    </div>
+               </div>
+               <div class="col-md-3 column col-xs-6">
+                    <div class="thumb-prev">
+                         <img src="https://github.com/DevTips/Artists-Theme/blob/gh-pages/assets/img/work/proj-2/thumb.jpg?raw=true" alt="">
+                         <div class="overlay">
+                              <p class="text-center">CONEX Verizon App Design</p>
+                         </div>
+                    </div>
+               </div>
           </div>
-          <div class="section testimonials">
-               <div class="container text-center"></div>
-               <div class="container-fluid clients"></div>
+     </div>
+
+     <div class="testimonials">
+          <div class="container-fluid text-center">
+               <div class="belt">
+                    <h2>Testimonials</h2>
+                    <div class="container-fluid active-cli person text-center">
+                         <figure class="client-face">
+                              <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/2/005/035/21a/36355a1.jpg" alt="">
+                              <figcaption>
+                                   <strong class="client-name">Victor M. Ramirez</strong><br>
+                                   <em class="client-title">CEO of Abstract Agency</em>
+                              </figcaption>
+                         </figure>
+                         <div class="container-fluid client-cont">
+                              <div class="client-quote-mark">
+                                   <!--?xml version="1.0" encoding="utf-8"?-->
+                                   <!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" enable-background="new 0 0 55 55" xml:space="preserve">
+                                        <path d="M50.692,9.732c-12.207,6.16-18.309,14.697-18.309,25.615c0,3.64,1.147,6.733,3.443,9.28c2.295,2.548,5.01,3.821,8.146,3.821
+                                        c2.799,0,5.123-0.979,6.971-2.939c1.848-1.959,2.771-4.367,2.771-7.223c0-2.688-0.953-5.052-2.855-7.097
+                                        c-1.904-2.043-4.312-3.233-7.223-3.569c0-4.535,3.415-8.482,10.246-11.842L50.692,9.732z M19.87,9.732
+                                        C7.72,15.891,1.645,24.429,1.645,35.347c0,3.64,1.134,6.733,3.401,9.28c2.268,2.548,4.968,3.821,8.104,3.821
+                                        c2.799,0,5.136-0.979,7.013-2.939c1.875-1.959,2.813-4.367,2.813-7.223c0-2.688-0.953-5.052-2.856-7.097
+                                        c-1.904-2.043-4.34-3.233-7.307-3.569c0-4.535,3.443-8.482,10.33-11.842L19.87,9.732z"></path>
+                                   </svg>
+                              </div>
+                              <p><strong>Mohammed Ajao is an energetic youth</strong> whose persona is a bit unique...And quirky. He's awesome in a team. Just note, this is filler content and is what Mohammed put there.</p>
+                         </div>
+                    </div>
+
+               </div>
           </div>
-     </article>
+     </div>
 
-     <footer>
+          <!--
+          <footer>
 
-     </footer>
+     </footer> -->
 
-
-     <!-- JQuery 3.2.1 Slim & Minified -->
-     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+     <!-- Audio -->
+     <!-- <audio id="myAudio" loop="loop" autoplay="autoplay">
+          <source src="assets/theme.mp3" type="audio/mpeg" />
+     </audio> -->
+     <!-- JQuery 3.2.1 Uncompressed -->
+     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
      <!-- Latest compiled and minified JavaScript -->
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
      <!--  -->
